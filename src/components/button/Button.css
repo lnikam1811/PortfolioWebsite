@@ -1,0 +1,54 @@
+.button {
+  outline: none;
+  height: 46px;
+  font-family: var(--font);
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+.demo-button {
+  background-color: var(--accent-color);
+  color: var(--white);
+  border: 1px solid var(--accent-color);
+  width: 135px;
+}
+
+.code-button {
+  background-color: var(--white);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  width: 118px;
+}
+
+.demo-button:hover,
+.code-button:hover {
+  cursor: pointer;
+}
+
+.tag-button {
+  height: auto;
+  font-size: 0.875rem;
+  padding: 8px 22px;
+  border: 1px solid var(--gray2);
+  background-color: var(--white);
+  color: var(--gray2);
+  margin: 0 1rem 0.5rem 0;
+}
+
+.tag-button:last-of-type {
+  margin-right: 0;
+}
+
+.tag-button:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.button-active,
+.button-active:hover {
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--white);
+}

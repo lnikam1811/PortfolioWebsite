@@ -1,0 +1,144 @@
+/* * {
+  outline: 1px grey solid;
+} */
+
+.App {
+  padding: 4.5rem 0 1.5rem;
+}
+
+.container {
+  width: min(100%, 1056px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+#name-card {
+  grid-column: span 5;
+  width: 100%;
+}
+
+#skill-card {
+  grid-column: span 2;
+  width: 100%;
+}
+
+#blogpost-card {
+  grid-column: span 3;
+  grid-row: span 2;
+  width: 100%;
+}
+
+#hobbies-card {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#work-experience-card {
+  grid-column: span 3;
+  width: 100%;
+}
+
+#projects {
+  grid-column: span 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#project-banner {
+  grid-column: span 3;
+  width: 100%;
+}
+
+#project-pagination {
+  grid-column: span 3;
+}
+
+#work-experience-card .experience-grid-vertical .experience-container {
+  gap: 2rem;
+}
+
+#work-experience-card
+  .experience-grid-vertical
+  .experience-container
+  .experience-paragraph {
+  width: min(100%, 388px);
+}
+
+#cooking-picture {
+  object-position: 0 -175px;
+}
+
+#biking-picture {
+  object-position: 0 -210px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1250px) {
+  .App {
+    padding: 4.5rem 0 1.5rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    width: min(93%, 450px);
+    margin-inline: auto;
+  }
+
+  #name-card {
+    grid-column: 1 /2;
+    grid-row: 1 /2;
+  }
+
+  #skill-card {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  #blogpost-card {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  #hobbies-card {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  #work-experience-card {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+
+  #work-experience-card .experience-grid-vertical .experience-container {
+    gap: 0.5rem;
+  }
+
+  #projects {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    grid-template-columns: 1fr;
+  }
+
+  #project-banner {
+    grid-column: span 1;
+  }
+
+  #project-pagination {
+    grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .demo-button {
+    margin-bottom: 0.75rem;
+  }
+}
