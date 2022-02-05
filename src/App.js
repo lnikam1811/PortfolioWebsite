@@ -80,7 +80,7 @@ const App = () => {
           jobTitle='Web Developer'
           email='labeshnikam1991@gmail.com'
           phone='(+91) 8734029021'
-          imageSrc='assets/images/Profile-picture.jpg'
+          imageSrc='assets/images/Profile-picture-2.jpg'
           paragraphContent={nameCardParagraphs}
           cardOrientation={nameCardOrientation}
         />
